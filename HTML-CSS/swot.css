@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #370617;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #F48C06;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.name-graphic {
+    background-color: #6A040F;
+    color: #F48C06;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 20px rgb(255, 0, 0);
+}
+
+.name-graphic h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+
+.name-graphic:hover {
+    background-color: #E9D8A6;
+    color: #6A040F;
+    transform: scale(1.05);
+}
+
+nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+nav a::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #370617;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::after, nav a.active::after {
+    transform: scaleX(1);
+    color: #370617;
+}
+
+nav a:active {
+    color: #370617;
+}
+
+.main {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main h1 {
+    color: #FAA307;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.swot-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+.swot-box {
+    font-size: 25px;
+    margin-bottom: 15px;
+    background-color: #6A040F;
+    padding: 25px 30px;
+    border-left: 5px solid #e85d04;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swot-box h2 {
+    color: #FAA307;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.swot-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 20px rgba(255, 255, 255, 1);
+}
+
+.strengths {
+  grid-column: 1;
+  grid-row: 1;
+  border-left: 6px solid #22c55e;
+}
+
+.weaknesses {
+  grid-column: 2;
+  grid-row: 1;
+  border-left: 6px solid #ef4444;
+}
+
+.opportunities {
+  grid-column: 1;
+  grid-row: 2;
+  border-left: 6px solid #3b82f6;
+}
+
+.threats {
+  grid-column: 2;
+  grid-row: 2;
+  border-left: 6px solid #f59e0b;
+}
+
+.swot-box:hover {
+  transform: translateY(-5px);
+}
+
+.strengths:hover {
+  border-left-color: #16a34a;
+}
+
+.weaknesses:hover {
+  border-left-color: #dc2626;
+}
+
+.opportunities:hover {
+  border-left-color: #2563eb;
+}
+
+.threats:hover {
+  border-left-color: #d97706;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.contact-footer {
+    background-color: #370617;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.contact-footer h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #E9D8A6;
+}
+
+.contact-footer p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.footer-bottom-text {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #E9D8A6;
+}
+
+.contact-footer {
+    background-color: #F48C06;
+    color: white;
+    text-align: center;
+    padding: 50px 20px 50px 20px;
+    
+}
+
+.contact-footer h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #DC2F02;
+}
+
+.contact-footer p {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.footer-social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-social-icons a {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-social-icons a:hover {
+    color: #fca311;
+    transform: scale(1.2);
+}
+
+.footer-bottom-text {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #6A040F;
+}
