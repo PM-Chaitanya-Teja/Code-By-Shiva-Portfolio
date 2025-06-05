@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #370617;
-    color: white;
+    background-color: #0A192F;
+    color: #FFFFFF;
 }
 
 header {
@@ -16,8 +16,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: #F48C06;
-    color: white;
+    background-color: #1F1F1F;
+    color: #64FFDA;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -25,18 +25,19 @@ header {
 
 header a {
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 .name-graphic {
-    background-color: #6A040F;
-    color: #F48C06;
+    background-color: #1F1F1F;
+    color: #64FFDA;
     padding: 10px;
     border-radius: 30px;
     text-align: center;
     max-width: 400px;
     margin: auto;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 20px rgb(255, 0, 0);
+    box-shadow: 0 4px 20px #64FFDA80;
 }
 
 .name-graphic h1 {
@@ -46,14 +47,14 @@ header a {
 }
 
 .name-graphic:hover {
-    background-color: #E9D8A6;
-    color: #6A040F;
+    background-color: #112240;
+    color: #64FFDA;
     transform: scale(1.05);
 }
 
 nav a {
     position: relative;
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     margin-left: 25px;
     font-weight: 500;
@@ -69,7 +70,7 @@ nav a::after {
     width: 100%;
     height: 3px;
     border-radius: 20px;
-    background-color: #370617;
+    background-color: #64FFDA;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease-in-out;
@@ -77,11 +78,10 @@ nav a::after {
 
 nav a:hover::after, nav a.active::after {
     transform: scaleX(1);
-    color: #370617;
 }
 
 nav a:active {
-    color: #370617;
+    color: #64FFDA;
 }
 
 .main {
@@ -91,7 +91,7 @@ nav a:active {
 }
 
 .main h1 {
-    color: #FAA307;
+    color: #64FFDA;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 40px;
@@ -101,49 +101,52 @@ nav a:active {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding: 50px 20px;
+    background-color: #0A192F;
 }
 
 .skill-category {
-    background-color: #6a040f;
-    padding: 25px 30px;
-    border-left: 5px solid #e85d04;
+    background-color: #112240;
+    padding: 30px 35px;
+    border-left: 4px solid #64FFDA;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(100, 255, 218, 0.1);
 }
 
 .skill-category:hover {
     transform: translateY(-5px);
-    box-shadow: 4px 8px 20px rgba(255, 255, 255, 1);
+    box-shadow: 0 6px 20px rgba(100, 255, 218, 0.3);
 }
 
 .skill-category h2 {
     text-align: center;
-    font-size: 40px;
-    color: #ffb703;
+    font-size: 32px;
+    color: #64FFDA;
     margin-bottom: 15px;
 }
 
 .skill-category p {
-    font-size: 25px;
+    font-size: 18px;
+    color: #8892B0;
     margin-bottom: 15px;
-    color: #fb8500;
 }
 
 .skill-category ul {
-    font-size: 25px;
+    font-size: 18px;
     list-style-type: disc;
     padding-left: 20px;
+    color: #CCD6F6;
 }
 
 .skill-category li {
     margin-bottom: 8px;
-    font-size: 25px;
-    color: #fefefe;
+    line-height: 1.6;
 }
 
 .contact-footer {
-    background-color: #370617;
-    color: white;
+    background-color: #2C3E50;
+    color: #E6F1FF;
     text-align: center;
     padding: 50px 20px;
     margin-top: 50px;
@@ -151,38 +154,8 @@ nav a:active {
 
 .contact-footer h2 {
     font-size: 36px;
-    margin-bottom: 20px;
-    color: #E9D8A6;
-}
-
-.contact-footer p {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.contact-info p {
-    margin: 5px 0;
-    font-size: 18px;
-}
-
-.footer-bottom-text {
-    margin-top: 30px;
-    font-size: 14px;
-    color: #E9D8A6;
-}
-
-.contact-footer {
-    background-color: #F48C06;
-    color: white;
-    text-align: center;
-    padding: 50px 20px 50px 20px;
-    
-}
-
-.contact-footer h2 {
-    font-size: 36px;
     margin-bottom: 10px;
-    color: #DC2F02;
+    color: #64FFDA;
 }
 
 .contact-footer p {
@@ -204,17 +177,17 @@ nav a:active {
 
 .footer-social-icons a {
     font-size: 24px;
-    color: white;
+    color: #64FFDA;
     transition: color 0.3s, transform 0.3s;
 }
 
 .footer-social-icons a:hover {
-    color: #fca311;
+    color: #FFFFFF;
     transform: scale(1.2);
 }
 
 .footer-bottom-text {
     margin-top: 30px;
     font-size: 14px;
-    color: #6A040F;
+    color: #8892B0;
 }
